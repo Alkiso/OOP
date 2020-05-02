@@ -15,7 +15,10 @@ public class Example
     {
         try
         {
-            Filter df = new DummyFilter(44100 * 3); // 3seconds
+            Filter df = new DelayFilter(44100 * 5); // 3seconds
+
+			//Filter df = new GainFilter(0.01); // 3seconds
+
 
             TestAudioFilter.applyFilter(df, "Virtual_Insanity_1m.wav", "Filtered.wav");
         }
