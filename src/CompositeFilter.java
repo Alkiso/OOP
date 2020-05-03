@@ -30,6 +30,7 @@ public class CompositeFilter implements Filter{
 
     public double[] computeOneStep(double[] input){
         //Iteration with one sample of sound.
+        return input;
     }
 
     public void connectBlockToBlock(Filter f1, int o1, Filter f2, int i2){
