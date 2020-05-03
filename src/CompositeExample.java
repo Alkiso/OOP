@@ -22,6 +22,7 @@
  */
 
 import be.uliege.montefiore.oop.audio.*;
+import com.company.CompositeFilter;
 
 public class CompositeExample
 {
@@ -50,7 +51,7 @@ public class CompositeExample
             audioFilter.connectBlockToOutput(add, 0, 0);
 
             // Applies the filter
-            TestAudioFilter.applyFilter(audioFilter, "Source.wav", "Filtered.wav");
+            TestAudioFilter.applyFilter(audioFilter, "Virtual_Insanity_1m.wav", "Filtered.wav");
         }
         catch(Exception e)
         {
