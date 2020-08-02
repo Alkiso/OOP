@@ -23,6 +23,8 @@
 
 import be.uliege.montefiore.oop.audio.*;
 import com.company.CompositeFilter;
+import com.company.Block;
+
 
 public class CompositeExample
 {
@@ -30,6 +32,9 @@ public class CompositeExample
     {
         try
         {
+
+
+
             // Creates the CompositeFilter object, with one input and one output
             CompositeFilter audioFilter = new CompositeFilter(1, 1);
 

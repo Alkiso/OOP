@@ -22,8 +22,12 @@
 
 import be.uliege.montefiore.oop.audio.Filter; // Also import FilterException if you're using it
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GainFilter implements Filter{
    private double mult;
+
 
    /*
     * Constructor. Duration is expressed in samples.
@@ -72,7 +76,8 @@ public class GainFilter implements Filter{
     */
 
    public void reset(){
-	 System.out.println("ça passe dans le reset");
-     // mult = 1;
+   //Does nothing
    }
+
+
 }

@@ -34,7 +34,7 @@ public class AdditionFilter implements Filter
 
    public AdditionFilter()
    {
-
+   //Nothing needs to be done
    }
 
    /*
@@ -76,6 +76,7 @@ public class AdditionFilter implements Filter
 
    public void reset()
    {
-
+   //Does nothing
    }
+
 }

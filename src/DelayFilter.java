@@ -21,6 +21,8 @@
  */
 
 import be.uliege.montefiore.oop.audio.Filter; // Also import FilterException if you're using it
+import com.company.CompositeFilter;
+
 
 public class DelayFilter implements Filter{
    private int duration, count;
@@ -37,6 +39,7 @@ public class DelayFilter implements Filter{
       count = 0;
       cutting = false;
 	  val = new double[(44100 * 60) + 1];
+      Filter f = new CompositeFilter(1,1);
    }
 
    /*
@@ -85,4 +88,6 @@ public class DelayFilter implements Filter{
       count = 0;
       cutting = false;
    }
+
+
 }
